@@ -7,7 +7,7 @@ library(dplyr)
 MechaCar_mpg <- read.csv(file="MechaCar_mpg.csv", check.names = F, stringsAsFactors = F)
 
 #  linear regression model on all six variables [15.7.2(single)/15.7.3(multiple)]
-lm(MechaCar_mpg$mpg ~ MechaCar_mpg$vehicle_length + 
+model<-lm(MechaCar_mpg$mpg ~ MechaCar_mpg$vehicle_length + 
               MechaCar_mpg$vehicle_weight + 
               MechaCar_mpg$spoiler_angle +
               MechaCar_mpg$ground_clearance +
